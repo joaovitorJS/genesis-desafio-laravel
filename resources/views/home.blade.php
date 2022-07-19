@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div>avaliacao</div>
+    <div>Conteudo</div>
 @endsection
 
 @push('styles')
