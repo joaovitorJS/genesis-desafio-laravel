@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [[ $@ == install ]]; then
+    COMANDO="apk --no-cache add git && npm install"
+else
+    COMANDO="npm $@"
+fi
+
+docker run --rm \
+    --user $(id -u):$(id -g) \
+    -v $(pwd)/storage/tmp:/.npm \
+    -v $(pwd)/storage/tmp:/.config \
+    -v $(pwd):/var/www \
+    -w /var/www \
+    node:12-alpine sh -c "$COMANDO"
