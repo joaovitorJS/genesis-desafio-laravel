@@ -1,6 +1,5 @@
 # Gênesis - Desafio de Código Laravel
 
----
 Nesse teste serão cobrados alguns conceitos básicos abordado os seguintes tópicos:
 
 * PHP (Laravel)
