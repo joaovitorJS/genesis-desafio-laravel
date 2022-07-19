@@ -73,7 +73,7 @@ O fluxo de agendamento deve seguir os seguintes passos:
    3. Cartao SUS
    4. Motivo do atendimento
    5. Data do atendimento
-   6. Urgencia do atendimento (baixa, media, alta, urgente)
+   6. Urgência do atendimento (baixa, media, alta, urgente)
    7. Médico atendente
    8. Profissional que realizou o agendamento
 3. Após o cadastro do agendamento o usuário é redirecionado para a tela inicial, onde pode ver a listagem dos agendamentos
@@ -91,6 +91,6 @@ Seja criativo!
 
 ## Importante
 
-- Caso tenha duvidas, faça perguntas pontuais para dar continuidade ao desafio
-- A parte mais importante do mini projeto e o larvel, caso tenha dúvidas relacionados ao jquery sinta-se livre para fazer perguntas
+- Caso tenha dúvidas, faça perguntas pontuais para dar continuidade ao desafio
+- A parte mais importante do mini projeto e o laravel, caso tenha dúvidas relacionados ao jquery sinta-se livre para fazer perguntas
 
