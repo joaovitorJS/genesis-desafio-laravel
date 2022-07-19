@@ -12,13 +12,11 @@ Você irá desenvolver uma aplicação simples contendo apenas um caso de uso si
 
 ## Configuração da Máquina
 
-
 - [Instale o Docker](https://docs.docker.com/get-docker/)
 
 
 ## Configuração do Desafio
 
----
 - Use esse repositório como ponto de partida.
 - Quando você terminar, lembre de fazer `push` em tudo e abrir um pull request.
 
@@ -61,8 +59,6 @@ docker exec -ti avaliacao-app php artisan migrate
 
 ## O que você precisa entregar?
 
----
-
 Uma mini aplicação que permite uma recepcionista agendar um atendimento para uma pessoa.
 
 A página onde a pessoa entra (a página inicial do mini aplicativo) já é a página para realizar o agendamento.
@@ -91,13 +87,9 @@ Seja criativo!
 
 ## Regras de Implementação
 
----
-
 - Explique suas ideias como comentários no código; Fique a vontade para usar Português ou Inglês.
 
 ## Importante
-
----
 
 - Caso tenha duvidas, faça perguntas pontuais para dar continuidade ao desafio
 - A parte mais importante do mini projeto e o larvel, caso tenha dúvidas relacionados ao jquery sinta-se livre para fazer perguntas
