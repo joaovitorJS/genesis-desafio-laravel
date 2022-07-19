@@ -12,7 +12,6 @@ Você irá desenvolver uma aplicação simples contendo apenas um caso de uso si
 
 ## Configuração da Máquina
 
----
 
 - [Instale o Docker](https://docs.docker.com/get-docker/)
 
