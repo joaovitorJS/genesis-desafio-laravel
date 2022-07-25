@@ -7,7 +7,7 @@ services:
         uid: 1000
       context: ./
       dockerfile: Dockerfile
-    container_name: avaliacao-app
+    container_name: desafio-genesis-app
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
@@ -15,10 +15,10 @@ services:
     ports:
       - "9002:9000"
     networks:
-      - avaliacao
+      - desafio-genesis
 
   postgres:
-    container_name: avaliacao_postgres
+    container_name: desafio-genesis-postgres
     image: postgres:9.6
     environment:
       POSTGRES_USER: postgres
@@ -29,11 +29,11 @@ services:
     ports:
       - "65432:5432"
     networks:
-      - avaliacao
+      - desafio-genesis
 
   nginx:
     image: nginx:alpine
-    container_name: avaliacao-nginx
+    container_name: desafio-genesis-nginx
     restart: unless-stopped
     ports:
       - "9003:80"
@@ -41,8 +41,8 @@ services:
       - ./:/var/www
       - ./docker-compose/nginx:/etc/nginx/conf.d/
     networks:
-      - avaliacao
+      - desafio-genesis
 
 networks:
-  avaliacao:
+  desafio-genesis:
     driver: bridge

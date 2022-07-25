@@ -21,11 +21,18 @@ Você irá desenvolver uma aplicação simples contendo apenas um caso de uso si
 - Quando você terminar, lembre de fazer `push` em tudo e abrir um pull request.
 
 ## Rodando o projeto
+Caso tenha problemas com a execuçao do docker, rode os comandos como usuario root ou adicione as devidas permissoes ao docker: https://docs.docker.com/engine/install/linux-postinstall/
+
+```bash
+docker-compose up -d --build
+```
 
 Rode o seguinte comando para fazer a instalação da pasta vendor:
 
+docker exec -ti desafio-genesis-app composer install
+
 ```bash
-docker exec -ti avaliacao-app composer install
+docker exec -ti desafio-genesis-app composer install
 ```
 
 Configure o arquivo .env
@@ -35,7 +42,7 @@ cp .env.example .env
 
 Configure a chave do projeto:
 ```bash
-docker exec -ti avaliacao-app php artisan key:generate
+docker exec -ti desafio-genesis-app php artisan key:generate
 ```
 
 Para compilar o javascript rode os seguintes comandos, (nao e necessario instalar o node, pois no projeto está configurado um arquivo bash com a imagem do node), rode os comandos como usuário root:
@@ -54,7 +61,7 @@ Utilizamos PostgreSQL como banco de dados principal, o banco de dados já está 
 Rode o comando migrate após criar suas migrações, lembre-se, as migrações não estado criadas, você deve fazê-las.
 
 ```bash
-docker exec -ti avaliacao-app php artisan migrate
+docker exec -ti desafio-genesis-app php artisan migrate
 ```
 
 ## O que você precisa entregar?
