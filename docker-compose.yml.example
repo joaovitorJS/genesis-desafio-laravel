@@ -17,31 +17,31 @@ services:
     networks:
       - avaliacao
 
-    postgres:
-      container_name: avaliacao_postgres
-        image: postgres:9.6
-        environment:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: "1011101"
-          POSTGRES_DB: postgres
-        volumes:
-          - ./storage/database:/var/lib/postgresql/data
-        ports:
-          - "65432:5432"
-        networks:
-          - avaliacao
+  postgres:
+    container_name: avaliacao_postgres
+    image: postgres:9.6
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "1011101"
+      POSTGRES_DB: postgres
+    volumes:
+      - ./storage/database:/var/lib/postgresql/data
+    ports:
+      - "65432:5432"
+    networks:
+      - avaliacao
 
-      nginx:
-        image: nginx:alpine
-        container_name: avaliacao-nginx
-        restart: unless-stopped
-        ports:
-          - "9002:80"
-        volumes:
-          - ./:/var/www
-          - ./docker-compose/nginx:/etc/nginx/conf.d/
-        networks:
-          - avaliacao
+  nginx:
+    image: nginx:alpine
+    container_name: avaliacao-nginx
+    restart: unless-stopped
+    ports:
+      - "9003:80"
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d/
+    networks:
+      - avaliacao
 
 networks:
   avaliacao:
