@@ -24,7 +24,7 @@ Você irá desenvolver uma aplicação simples contendo apenas um caso de uso si
 Caso tenha problemas com a execuçao do docker, rode os comandos como usuario root ou adicione as devidas permissoes ao docker: https://docs.docker.com/engine/install/linux-postinstall/
 
 ```bash
-docker-compose up -d --build
+docker compose up -d --build
 ```
 
 Rode o seguinte comando para fazer a instalação da pasta vendor:
